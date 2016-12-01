@@ -3,5 +3,6 @@ services: docker
 script:
   - touch .gitignore
   - docker run --volume=$(pwd):/app --workdir=/app coala/base:0.8 /bin/bash -c "pip3 install 'git+https://github.com/jayvdb/coala-quickstart@gh_39'; coala-quickstart --ci; yes 0 | coala --apply-patches --no-orig; coala-ci || true"
-  - git --no-pager diff --ignore-all-space --ignore-blank-lines
-  - git --no-pager diff --exit-code
+  - git add --all
+  - git --no-pager diff --cached --find-renames --ignore-all-space --ignore-blank-lines
+  - git --no-pager diff --cached --find-renames --exit-code
