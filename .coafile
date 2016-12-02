@@ -1,5 +1,5 @@
 [default]
-bears = InvalidLinkBear, coalaBear, FilenameBear
+bears = InvalidLinkBear, FilenameBear
 files = **.ui, **.py, **.css, **.yml, **.xml, **.md, **.svg
 ignore = 
 
