@@ -1,0 +1,24 @@
+[default]
+bears = InvalidLinkBear, coalaBear, FilenameBear
+files = **.ui, **.py, **.css, **.yml, **.xml, **.md, **.svg
+ignore = 
+
+[python]
+bears = PEP8Bear
+files = **.py
+
+[xml]
+bears = XMLBear, LineLengthBear
+files = **.xml, **.ui, **.svg
+
+[markdown]
+bears = MarkdownBear, LineLengthBear
+files = **.md
+
+[yaml]
+bears = YAMLLintBear, LineLengthBear
+files = **.yml
+
+[css]
+bears = CSSLintBear
+files = **.css

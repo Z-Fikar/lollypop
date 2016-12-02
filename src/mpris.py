@@ -78,7 +78,7 @@ class MPRIS(Server):
     '''
     <!DOCTYPE node PUBLIC
     '-//freedesktop//DTD D-BUS Object Introspection 1.0//EN'
-    'http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd'>
+    'https://specifications.freedesktop.org/dbus/1.0/introspect.dtd'>
     <node>
         <interface name='org.freedesktop.DBus.Introspectable'>
             <method name='Introspect'>
