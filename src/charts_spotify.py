@@ -82,7 +82,7 @@ class SpotifyCharts:
             @param url as str
         """
         if not get_network_available():
-                return
+            return
         debug("SpotifyCharts::__update_for_url(): %s => %s" % (url,
                                                                self.__count))
         ids = self.__get_ids(url)

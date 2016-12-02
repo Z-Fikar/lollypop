@@ -125,11 +125,11 @@ class ExternalsPopover(Gtk.Popover):
         """
         if track.uri == Lp().player.current_track.uri:
             self.__model.append((track.uri, 'media-playback-start-symbolic',
-                                track.artist, track.title,
-                                seconds_to_string(track.duration)))
+                                 track.artist, track.title,
+                                 seconds_to_string(track.duration)))
         else:
             self.__model.append((track.uri, '', track.artist, track.title,
-                                seconds_to_string(track.duration)))
+                                 seconds_to_string(track.duration)))
 
     def __on_self_unmap(self, widget):
         """

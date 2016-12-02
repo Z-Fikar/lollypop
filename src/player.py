@@ -370,7 +370,7 @@ class Player(BinPlayer, QueuePlayer, UserPlaylistPlayer, RadioPlayer,
             if Lp().settings.get_value('save-state'):
                 track_id = load(open(DataPath + "/track_id.bin", "rb"))
                 playlist_ids = load(open(DataPath + "/playlist_ids.bin",
-                                    "rb"))
+                                         "rb"))
                 if playlist_ids and playlist_ids[0] == Type.RADIOS:
                     radios = Radios()
                     track = Track()

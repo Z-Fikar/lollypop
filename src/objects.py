@@ -22,6 +22,7 @@ class Base:
     """
         Base for album and track objects
     """
+
     def __init__(self, db):
         self.db = db
 

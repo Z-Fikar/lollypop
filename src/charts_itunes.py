@@ -187,7 +187,7 @@ class ItunesCharts:
             @param url as str
         """
         if not get_network_available():
-                return
+            return
         debug("ItunesCharts::__update_for_url(): %s => %s" % (url,
                                                               self.__count))
         web = Web()
@@ -213,7 +213,7 @@ class ItunesCharts:
             @return SearchItem/None
         """
         if not get_network_available():
-                return
+            return
         language = getdefaultlocale()[0][0:2]
         try:
             debug("ItunesCharts::__get_album(): %s" % itunes_id)

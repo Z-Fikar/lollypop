@@ -17,6 +17,7 @@ class SearchItem:
     """
         Represent a search item
     """
+
     def __init__(self):
         self.is_track = False
         self.id = None  # Always None for externals

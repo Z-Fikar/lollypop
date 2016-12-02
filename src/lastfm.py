@@ -372,7 +372,7 @@ class LastFM(LastFMNetwork, LibreFMNetwork):
                         tracks.append(Track(track_id))
                 Lp().playlists.add_tracks(Type.LOVED, tracks)
         except Exception as e:
-                print("LastFM::__populate_loved_tracks: %s" % e)
+            print("LastFM::__populate_loved_tracks: %s" % e)
 
     def __on_password_lookup(self, source, result):
         """

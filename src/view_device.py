@@ -24,6 +24,7 @@ class DeviceLocked(View):
     """
         Show a message about locked device to users
     """
+
     def __init__(self):
         """
             Init view

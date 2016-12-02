@@ -55,7 +55,7 @@ class DeviceManagerWidget(Gtk.Bin, MtpSync):
             self.__switch_mp3.set_sensitive(False)
             self.__switch_normalize.set_sensitive(False)
             self.__switch_mp3.set_tooltip_text(_("You need to install " +
-                                               "gstreamer-plugins-ugly"))
+                                                 "gstreamer-plugins-ugly"))
         else:
             self.__switch_mp3.set_state(Lp().settings.get_value('convert-mp3'))
         self.__menu_items = builder.get_object('menu-items')

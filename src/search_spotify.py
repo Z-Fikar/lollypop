@@ -21,6 +21,7 @@ class SpotifySearch:
     """
         Search provider for Spotify
     """
+
     def __init__(self):
         """
             Init provider
@@ -155,7 +156,7 @@ class SpotifySearch:
                     if item['name'].lower() in artists:
                         continue
                     artists.append(item['name'].lower())
-                    s = Gio.File.new_for_uri("https://api.spotify.com/"
+                    s = Gio.File.new_for_uri("https://developer.spotify.com/"
                                              "v1/artists/%s/albums" %
                                              artist_id)
                     (status, data, tag) = s.load_contents(self._cancel)

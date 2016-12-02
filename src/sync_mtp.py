@@ -26,6 +26,7 @@ class MtpSync:
     """
         Synchronisation to MTP devices
     """
+
     def __init__(self):
         """
             Init MTP synchronisation
@@ -245,9 +246,9 @@ class MtpSync:
                     m3u = Gio.File.new_for_path(
                         "/tmp/lollypop_%s.m3u" % (playlist_name,))
                     self.__retry(m3u.replace_contents, (b'#EXTM3U\n', None,
-                                 False,
-                                 Gio.FileCreateFlags.REPLACE_DESTINATION,
-                                 None))
+                                                        False,
+                                                        Gio.FileCreateFlags.REPLACE_DESTINATION,
+                                                        None))
                     stream = m3u.open_readwrite(None)
                 except Exception as e:
                     print("DeviceWidget::_copy_to_device(): %s" % e)

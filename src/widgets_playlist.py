@@ -429,7 +429,7 @@ class PlaylistsWidget(Gtk.Grid):
                                           tracks,
                                           False)
             if not (set(self.__playlist_ids) -
-               set(Lp().player.get_user_playlist_ids())):
+                    set(Lp().player.get_user_playlist_ids())):
                 Lp().player.update_user_playlist(self.__tracks_left +
                                                  self.__tracks_right)
 
@@ -683,7 +683,7 @@ class PlaylistsManagerWidget(Gtk.Bin):
             else:
                 selected = False
             self.__model.append([selected, playlist[1],
-                                'user-trash-symbolic', playlist[0]])
+                                 'user-trash-symbolic', playlist[0]])
 
     def __show_infobar(self, path):
         """
@@ -972,7 +972,7 @@ class PlaylistEditWidget(Gtk.Bin):
             else:
                 artists = ", ".join(track.album.artists)
             self.__model.append([track.album.id,
-                                "<b>%s</b>\n%s" % (
+                                 "<b>%s</b>\n%s" % (
                                    GLib.markup_escape_text(artists),
                                    GLib.markup_escape_text(track.name)),
                                  'user-trash-symbolic', track.id])

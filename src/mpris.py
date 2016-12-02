@@ -22,6 +22,7 @@ from lollypop.define import Lp, ArtSize, Type
 
 
 class Server:
+
     def __init__(self, con, path):
         method_outargs = {}
         method_inargs = {}
@@ -78,7 +79,7 @@ class MPRIS(Server):
     '''
     <!DOCTYPE node PUBLIC
     '-//freedesktop//DTD D-BUS Object Introspection 1.0//EN'
-    'http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd'>
+    'https://specifications.freedesktop.org/dbus/1.0/introspect.dtd'>
     <node>
         <interface name='org.freedesktop.DBus.Introspectable'>
             <method name='Introspect'>
@@ -382,7 +383,7 @@ class MPRIS(Server):
     def __on_volume_changed(self, player, data=None):
         self.PropertiesChanged(self.__MPRIS_PLAYER_IFACE,
                                {'Volume': GLib.Variant('d',
-                                Lp().player.volume), },
+                                                       Lp().player.volume), },
                                [])
 
     def __on_current_changed(self, player):

@@ -57,6 +57,7 @@ class DatabaseUpgrade:
         Return upgrade count
         @return int
     """
+
     def count(self):
         return len(self._UPGRADES)
 
@@ -64,6 +65,7 @@ class DatabaseUpgrade:
         Upgrade database based on version
         @return new db version as int
     """
+
     def do_db_upgrade(self):
         with SqlCursor(self._db) as sql:
             for i in range(self._version+1, len(self._UPGRADES)+1):

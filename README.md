@@ -1,15 +1,14 @@
-#Lollypop
-
+\#Lollypop
 
 Lollypop is a new GNOME music playing application.
 
+For users: <http://gnumdk.github.io/lollypop-web/>
+FAQ: <https://github.com/gnumdk/lollypop/wiki>
 
-For users: http://gnumdk.github.io/lollypop-web
-FAQ: https://github.com/gnumdk/lollypop/wiki
-
-For translators: https://www.transifex.com/projects/p/lollypop/
+For translators: <https://www.transifex.com/gnumdk/lollypop/>
 
 It provides:
+
 - mp3/4, ogg and flac.
 - Genre/Cover browsing
 - Genre/Artist/Cover browsing
@@ -27,7 +26,8 @@ It provides:
 - HiDPI support
 - Tunein support
 
-##Depends on
+\##Depends on
+
 - gtk3 >= 3.14
 - gobject-introspection
 - gir1.2-gstreamer-1.0 (Debian)
@@ -42,24 +42,27 @@ It provides:
 - python-sqlite
 - python-pylast >= 1.0
 
-##Building from git
+\##Building from git
+
 ```
-$ git clone https://github.com/gnumdk/lollypop.git
+$ git clone https://github.com/gnumdk/lollypop
 $ cd lollypop
 $ ./autogen.sh
 $ make
 # make install
 ```
 
-In case you want the integration with [Last.fm](http://last.fm) to work you need to install `pylast`
+In case you want the integration with [Last.fm](http://www.last.fm/) to work you need to install `pylast`
+
 ```
 # apt-get install python3-pip
 # pip3 install pylast
 ```
 
 ### On Debian (Jessie)
+
 ```
-$ git clone https://github.com/gnumdk/lollypop.git
+$ git clone https://github.com/gnumdk/lollypop
 $ cd lollypop
 # apt-get install autoconf libglib2.0-dev intltool yelp-tools libgirepository1.0-dev libgtk-3-dev
 $ ./autogen.sh
@@ -68,8 +71,10 @@ $ make
 ```
 
 Instead of `make install` you might want to use `checkinstall`
+
 ```
 # apt-get install checkinstall
 # checkinstall
 ```
+
 This will allow you to uninstall Lollypop as a package, for example with `apt-get uninstall lollypop`.

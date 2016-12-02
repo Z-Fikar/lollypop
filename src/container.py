@@ -32,6 +32,7 @@ class Container:
     """
         Container for main view
     """
+
     def __init__(self):
         """
             Init container

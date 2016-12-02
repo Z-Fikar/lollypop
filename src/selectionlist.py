@@ -389,8 +389,8 @@ class SelectionList(Gtk.Bin):
         else:
             string = value[1]
         i = self.__model.append([value[0],
-                                string,
-                                self.__get_icon_name(value[0])])
+                                 string,
+                                 self.__get_icon_name(value[0])])
         if value[0] in self.__to_select_ids:
             self.__to_select_ids.remove(value[0])
             self.__selection.select_iter(i)

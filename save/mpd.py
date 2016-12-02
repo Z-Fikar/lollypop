@@ -1415,6 +1415,7 @@ class MpdServerDaemon(MpdServer):
         @param eth as string
         @param port as int
     """
+
     def __init__(self, eth="", port=6600):
         """
             Init daemon
