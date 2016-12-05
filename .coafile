@@ -10,10 +10,12 @@ files = **.py
 [xml]
 bears = XMLBear, LineLengthBear
 files = **.xml, **.ui, **.svg
+max_line_length = 4000
 
 [markdown]
 bears = MarkdownBear, LineLengthBear
 files = **.md
+max_line_length = 500
 
 [yaml]
 bears = YAMLLintBear, LineLengthBear
